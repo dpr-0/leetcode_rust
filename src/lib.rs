@@ -1,3 +1,4 @@
+mod convert_an_array_into_a_2d_array_with_conditions;
 mod group_anagrams;
 mod minimum_difficulty_of_a_job_schedule;
 mod product_of_array_except_self;
