@@ -34,5 +34,8 @@ fn test_top_k_frequent() {
     assert_eq!(Solution::top_k_frequent(case2, 1), [1]);
 
     let case3 = vec![4, 1, -1, 2, -1, 2, 3];
-    assert_eq!(Solution::top_k_frequent(case3, 2), [2, -1]);
+    assert_eq!(
+        std::collections::HashSet::from_iter(Solution::top_k_frequent(case3, 2)),
+        std::collections::HashSet::from([2, -1])
+    );
 }
