@@ -1,5 +1,7 @@
+#[allow(dead_code)]
 struct Solution {}
 
+#[allow(dead_code)]
 impl Solution {
     pub fn encode(strs: Vec<&str>) -> String {
         let mut encoded = String::new();
