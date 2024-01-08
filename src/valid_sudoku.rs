@@ -84,7 +84,6 @@ use crate::Solution;
 // @lc code=start
 use std::collections::HashSet;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
         let mut table = HashSet::new();

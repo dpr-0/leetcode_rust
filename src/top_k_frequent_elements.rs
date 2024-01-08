@@ -10,7 +10,6 @@ use crate::Solution;
 use std::collections::HashMap;
 use std::iter::FromIterator;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let mut table: HashMap<i32, i32> = HashMap::new();

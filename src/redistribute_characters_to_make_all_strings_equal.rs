@@ -7,7 +7,6 @@ use crate::Solution;
 // @lc code=start
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn make_equal(words: Vec<String>) -> bool {
         if words.len() == 1 {

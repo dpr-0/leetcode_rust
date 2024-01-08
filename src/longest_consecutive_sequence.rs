@@ -50,7 +50,6 @@ use crate::Solution;
 use std::iter::FromIterator;
 use std::{cmp, collections::HashSet};
 
-#[allow(dead_code)]
 impl Solution {
     pub fn longest_consecutive(nums: Vec<i32>) -> i32 {
         let nums: HashSet<i32> = HashSet::from_iter(nums.into_iter());

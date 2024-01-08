@@ -9,5 +9,5 @@ mod reverse_words_in_a_string;
 mod top_k_frequent_elements;
 mod two_sum;
 mod valid_sudoku;
-#[allow(dead_code)]
-struct Solution {}
+
+pub struct Solution {}

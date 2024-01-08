@@ -8,7 +8,6 @@ use crate::Solution;
 // @lc code=start
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
         let mut table: HashMap<String, Vec<usize>> = HashMap::new();

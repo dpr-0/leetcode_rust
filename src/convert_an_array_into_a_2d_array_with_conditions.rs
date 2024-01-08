@@ -65,7 +65,6 @@ use crate::Solution;
 // @lc code=start
 use std::collections::BTreeSet;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn find_matrix(nums: Vec<i32>) -> Vec<Vec<i32>> {
         let mut res = Vec::new();

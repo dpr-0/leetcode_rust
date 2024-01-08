@@ -5,7 +5,7 @@
  */
 use crate::Solution;
 // @lc code=start
-#[allow(dead_code)]
+
 impl Solution {
     pub fn reverse_words(s: String) -> String {
         let mut res = Vec::new();
