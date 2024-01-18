@@ -8,6 +8,7 @@ mod redistribute_characters_to_make_all_strings_equal;
 mod reverse_words_in_a_string;
 mod top_k_frequent_elements;
 mod two_sum;
+mod valid_palindrome;
 mod valid_sudoku;
 
 pub struct Solution {}
