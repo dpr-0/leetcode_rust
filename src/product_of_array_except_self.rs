@@ -46,7 +46,7 @@
  *
  */
 
-use crate::Solution;
+pub struct Solution {}
 
 // @lc code=start
 

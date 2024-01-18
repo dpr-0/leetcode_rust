@@ -3,7 +3,7 @@
  *
  * [49] Group Anagrams
  */
-use crate::Solution;
+pub struct Solution {}
 
 // @lc code=start
 use std::collections::HashMap;

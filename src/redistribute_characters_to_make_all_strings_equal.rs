@@ -3,7 +3,8 @@
  *
  * [1897] Redistribute Characters to Make All Strings Equal
  */
-use crate::Solution;
+pub struct Solution {}
+
 // @lc code=start
 use std::collections::HashMap;
 

@@ -79,7 +79,7 @@
  *
  */
 
-use crate::Solution;
+pub struct Solution {}
 
 // @lc code=start
 use std::collections::HashSet;

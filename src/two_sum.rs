@@ -3,7 +3,7 @@
  *
  * [1] Two Sum
  */
-use crate::Solution;
+pub struct Solution {}
 
 // @lc code=start
 use std::collections::HashMap;

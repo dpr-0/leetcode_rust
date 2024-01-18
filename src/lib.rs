@@ -1,14 +1,12 @@
-mod convert_an_array_into_a_2d_array_with_conditions;
-mod encode_and_decode_strings;
-mod group_anagrams;
-mod longest_consecutive_sequence;
-mod minimum_difficulty_of_a_job_schedule;
-mod product_of_array_except_self;
-mod redistribute_characters_to_make_all_strings_equal;
-mod reverse_words_in_a_string;
-mod top_k_frequent_elements;
-mod two_sum;
-mod valid_palindrome;
-mod valid_sudoku;
-
-pub struct Solution {}
+pub mod convert_an_array_into_a_2d_array_with_conditions;
+pub mod encode_and_decode_strings;
+pub mod group_anagrams;
+pub mod longest_consecutive_sequence;
+pub mod minimum_difficulty_of_a_job_schedule;
+pub mod product_of_array_except_self;
+pub mod redistribute_characters_to_make_all_strings_equal;
+pub mod reverse_words_in_a_string;
+pub mod top_k_frequent_elements;
+pub mod two_sum;
+pub mod valid_palindrome;
+pub mod valid_sudoku;

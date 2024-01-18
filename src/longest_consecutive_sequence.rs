@@ -45,7 +45,8 @@
  *
  */
 
-use crate::Solution;
+pub struct Solution {}
+
 // @lc code=start
 use std::iter::FromIterator;
 use std::{cmp, collections::HashSet};
