@@ -8,5 +8,6 @@ pub mod redistribute_characters_to_make_all_strings_equal;
 pub mod reverse_words_in_a_string;
 pub mod top_k_frequent_elements;
 pub mod two_sum;
+pub mod two_sum_ii_input_array_is_sorted;
 pub mod valid_palindrome;
 pub mod valid_sudoku;
