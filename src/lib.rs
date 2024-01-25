@@ -1,3 +1,4 @@
+pub mod container_with_most_water;
 pub mod convert_an_array_into_a_2d_array_with_conditions;
 pub mod encode_and_decode_strings;
 pub mod group_anagrams;
