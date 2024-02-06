@@ -3,6 +3,7 @@ pub mod convert_an_array_into_a_2d_array_with_conditions;
 pub mod encode_and_decode_strings;
 pub mod group_anagrams;
 pub mod longest_consecutive_sequence;
+pub mod maximum_number_of_words_found_in_sentences;
 pub mod minimum_difficulty_of_a_job_schedule;
 pub mod product_of_array_except_self;
 pub mod redistribute_characters_to_make_all_strings_equal;
