@@ -59,7 +59,7 @@
  *
  *
  */
-pub struct Solution {}
+pub struct Solution;
 // @lc code=start
 impl Solution {
     pub fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {

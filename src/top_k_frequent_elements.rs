@@ -4,7 +4,7 @@
  * [347] Top K Frequent Elements
  */
 
-pub struct Solution {}
+pub struct Solution;
 
 // @lc code=start
 use std::collections::HashMap;

@@ -3,7 +3,7 @@
  *
  * [151] Reverse Words in a String
  */
-pub struct Solution {}
+pub struct Solution;
 
 // @lc code=start
 

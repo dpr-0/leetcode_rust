@@ -4,7 +4,7 @@
  * [1335] Minimum Difficulty of a Job Schedule
  */
 
-pub struct Solution {}
+pub struct Solution;
 
 // @lc code=start
 use std::cmp;

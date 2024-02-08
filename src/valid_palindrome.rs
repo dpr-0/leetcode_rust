@@ -58,7 +58,7 @@
  *
  */
 
-pub struct Solution {}
+pub struct Solution;
 
 // @lc code=start
 impl Solution {

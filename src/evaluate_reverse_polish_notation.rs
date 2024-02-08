@@ -73,7 +73,7 @@
  *
  *
  */
-pub struct Solution {}
+pub struct Solution;
 // @lc code=start
 impl Solution {
     pub fn eval_rpn(mut tokens: Vec<String>) -> i32 {
