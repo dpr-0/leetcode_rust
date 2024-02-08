@@ -40,10 +40,10 @@ fn test_make_equal() {
     use crate::tests::StringVec;
 
     let case1 = StringVec::from(["abc", "aabc", "bc"]);
-    assert_eq!(Solution::make_equal(case1), true);
+    assert!(Solution::make_equal(case1));
 
     let case2 = StringVec::from(["ab", "a"]);
-    assert_eq!(Solution::make_equal(case2), false);
+    assert!(!Solution::make_equal(case2));
 
     let case3 = StringVec::from([
         "caaaaa",
@@ -62,5 +62,5 @@ fn test_make_equal() {
         "cccccccc",
         "c",
     ]);
-    assert_eq!(Solution::make_equal(case3), true);
+    assert!(Solution::make_equal(case3));
 }

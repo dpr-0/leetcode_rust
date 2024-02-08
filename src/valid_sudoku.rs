@@ -87,6 +87,8 @@ use std::collections::HashSet;
 impl Solution {
     pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
         let mut table = HashSet::new();
+
+        #[allow(clippy::needless_range_loop)]
         for i in 0..9 {
             for j in 0..9 {
                 let digit = board[i][j];
@@ -124,7 +126,7 @@ fn test_valid_sudoku() {
         vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
         vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
     ];
-    assert_eq!(Solution::is_valid_sudoku(case1), true);
+    assert!(Solution::is_valid_sudoku(case1));
 
     let case2 = vec![
         vec!['8', '3', '.', '.', '7', '.', '.', '.', '.'],
@@ -137,5 +139,5 @@ fn test_valid_sudoku() {
         vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
         vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
     ];
-    assert_eq!(Solution::is_valid_sudoku(case2), false);
+    assert!(!Solution::is_valid_sudoku(case2));
 }

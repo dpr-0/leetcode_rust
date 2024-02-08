@@ -53,7 +53,7 @@ use std::{cmp, collections::HashSet};
 
 impl Solution {
     pub fn longest_consecutive(nums: Vec<i32>) -> i32 {
-        let nums: HashSet<i32> = HashSet::from_iter(nums.into_iter());
+        let nums: HashSet<i32> = HashSet::from_iter(nums);
 
         let mut longest_consecutive_len = 0;
         for num in &nums {
@@ -71,7 +71,7 @@ impl Solution {
                 longest_consecutive_len = cmp::max(longest_consecutive_len, consecutive_len);
             }
         }
-        longest_consecutive_len as i32
+        longest_consecutive_len
     }
 }
 // @lc code=end

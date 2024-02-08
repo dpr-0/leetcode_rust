@@ -61,6 +61,8 @@
  */
 pub struct Solution;
 // @lc code=start
+use std::cmp::Ordering;
+
 impl Solution {
     pub fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
         nums.sort();
@@ -73,16 +75,16 @@ impl Solution {
             let (mut left, mut right) = (i + 1, nums.len() - 1);
             while left < right {
                 let three_sum = nums[i] + nums[left] + nums[right];
-                if three_sum == 0 {
-                    res.push(vec![nums[i], nums[left], nums[right]]);
-                    left += 1;
-                    while nums[left] == nums[left - 1] && left < right {
+                match three_sum.cmp(&0) {
+                    Ordering::Equal => {
+                        res.push(vec![nums[i], nums[left], nums[right]]);
                         left += 1;
+                        while nums[left] == nums[left - 1] && left < right {
+                            left += 1;
+                        }
                     }
-                } else if three_sum > 0 {
-                    right -= 1;
-                } else {
-                    left += 1;
+                    Ordering::Greater => right -= 1,
+                    Ordering::Less => left += 1,
                 }
             }
         }

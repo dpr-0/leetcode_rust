@@ -69,17 +69,17 @@
 pub struct Solution;
 
 // @lc code=start
+use std::cmp::Ordering;
+
 impl Solution {
     pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
         let (mut left, mut right) = (0, numbers.len() - 1);
         while left < right {
             let two_sum = numbers[left] + numbers[right];
-            if two_sum == target {
-                break;
-            } else if two_sum > target {
-                right -= 1;
-            } else {
-                left += 1;
+            match two_sum.cmp(&target) {
+                Ordering::Equal => break,
+                Ordering::Greater => right -= 1,
+                Ordering::Less => left += 1,
             }
         }
         vec![left as i32 + 1, right as i32 + 1]

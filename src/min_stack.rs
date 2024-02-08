@@ -78,6 +78,7 @@ pub struct MinStack {
  * If you need a mutable reference, change it to `&mut self` instead.
  */
 impl MinStack {
+    #[allow(clippy::new_without_default)]
     pub fn new() -> Self {
         Self {
             elements: Vec::new(),

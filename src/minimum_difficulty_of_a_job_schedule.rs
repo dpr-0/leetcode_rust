@@ -24,7 +24,7 @@ fn min_difficulty(
         return i32::MAX;
     }
     if let Some(ans) = table.get(&(curr, d, daily_max_difficulty)) {
-        return ans.clone();
+        return *ans;
     }
     let daily_max_difficulty = cmp::max(daily_max_difficulty, job_difficulty[curr]);
     let ans = cmp::min(

@@ -88,17 +88,17 @@ impl Solution {
 #[test]
 fn test_is_valid() {
     let case1 = String::from("()");
-    assert_eq!(Solution::is_valid(case1), true);
+    assert!(Solution::is_valid(case1));
 
     let case2 = String::from("()[]{}");
-    assert_eq!(Solution::is_valid(case2), true);
+    assert!(Solution::is_valid(case2));
 
     let case3 = String::from("(]");
-    assert_eq!(Solution::is_valid(case3), false);
+    assert!(!Solution::is_valid(case3));
 
     let case4 = String::from("(");
-    assert_eq!(Solution::is_valid(case4), false);
+    assert!(!Solution::is_valid(case4));
 
     let case5 = String::from(")(){}");
-    assert_eq!(Solution::is_valid(case5), false);
+    assert!(!Solution::is_valid(case5));
 }
