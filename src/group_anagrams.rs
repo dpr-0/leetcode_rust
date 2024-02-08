@@ -10,30 +10,26 @@ use std::collections::HashMap;
 
 impl Solution {
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
-        let mut table: HashMap<String, Vec<usize>> = HashMap::new();
-        for (i, str) in strs.iter().enumerate() {
-            let mut str_vec: Vec<char> = str.chars().collect();
-            str_vec.sort();
-            let sorted_str: String = str_vec.into_iter().collect();
-            if table.contains_key(&sorted_str) {
-                if let Some(indexes) = table.get_mut(&sorted_str) {
-                    indexes.push(i);
-                }
-            } else {
-                table.insert(sorted_str, vec![i]);
-            }
+        let mut table: HashMap<[i32; 26], Vec<String>> = HashMap::new();
+        for str in strs {
+            table.entry(Self::freqs(&str)).or_default().push(str);
         }
         let mut res: Vec<Vec<String>> = Vec::new();
-        for (_, i_group) in table.into_iter() {
-            let mut g: Vec<String> = Vec::new();
-            for i in i_group {
-                g.push(strs[i].clone());
-            }
-            g.sort();
-            res.push(g);
+        for mut v in table.into_values() {
+            v.sort();
+            res.push(v);
         }
-        res.sort_by(|a, b| a.len().cmp(&b.len()));
+
+        res.sort_by_key(|a| a.len());
         res
+    }
+
+    fn freqs(s: &str) -> [i32; 26] {
+        let mut freqs = [0; 26];
+        for b in s.bytes() {
+            freqs[(b - b'a') as usize] += 1;
+        }
+        freqs
     }
 }
 // @lc code=end
