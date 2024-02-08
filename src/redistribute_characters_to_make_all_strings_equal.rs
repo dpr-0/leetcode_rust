@@ -37,16 +37,15 @@ impl Solution {
 
 #[test]
 fn test_make_equal() {
-    let case1 = vec!["abc", "aabc", "bc"]
-        .iter()
-        .map(|x| x.to_string())
-        .collect();
+    use crate::tests::StringVec;
+
+    let case1 = StringVec::from(["abc", "aabc", "bc"]);
     assert_eq!(Solution::make_equal(case1), true);
 
-    let case2 = vec!["ab", "a"].iter().map(|x| x.to_string()).collect();
+    let case2 = StringVec::from(["ab", "a"]);
     assert_eq!(Solution::make_equal(case2), false);
 
-    let case3 = vec![
+    let case3 = StringVec::from([
         "caaaaa",
         "aaaaaaaaa",
         "a",
@@ -62,9 +61,6 @@ fn test_make_equal() {
         "c",
         "cccccccc",
         "c",
-    ]
-    .iter()
-    .map(|x| x.to_string())
-    .collect();
+    ]);
     assert_eq!(Solution::make_equal(case3), true);
 }

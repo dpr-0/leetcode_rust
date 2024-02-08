@@ -77,17 +77,15 @@ impl Solution {
 
 #[test]
 fn test_most_words_found() {
-    let case1 = vec![
-        String::from("alice and bob love leetcode"),
-        String::from("i think so too"),
-        String::from("this is great thanks very much"),
-    ];
+    use crate::tests::StringVec;
+
+    let case1 = StringVec::from([
+        "alice and bob love leetcode",
+        "i think so too",
+        "this is great thanks very much",
+    ]);
     assert_eq!(Solution::most_words_found(case1), 6);
 
-    let case2 = vec![
-        String::from("please wait"),
-        String::from("continue to fight"),
-        String::from("continue to win"),
-    ];
+    let case2 = StringVec::from(["please wait", "continue to fight", "continue to win"]);
     assert_eq!(Solution::most_words_found(case2), 3);
 }

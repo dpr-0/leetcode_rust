@@ -113,23 +113,17 @@ impl Solution {
 
 #[test]
 fn test_eval_rpn() {
-    let case1: Vec<String> = ["2", "1", "+", "3", "*"]
-        .into_iter()
-        .map(String::from)
-        .collect();
+    use crate::tests::StringVec;
+
+    let case1 = StringVec::from(["2", "1", "+", "3", "*"]);
+
     assert_eq!(Solution::eval_rpn(case1), 9);
 
-    let case2: Vec<String> = ["4", "13", "5", "/", "+"]
-        .into_iter()
-        .map(String::from)
-        .collect();
+    let case2 = StringVec::from(["4", "13", "5", "/", "+"]);
     assert_eq!(Solution::eval_rpn(case2), 6);
 
-    let case3: Vec<String> = [
+    let case3 = StringVec::from([
         "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+",
-    ]
-    .into_iter()
-    .map(String::from)
-    .collect();
+    ]);
     assert_eq!(Solution::eval_rpn(case3), 22);
 }

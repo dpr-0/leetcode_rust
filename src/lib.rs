@@ -18,3 +18,13 @@ pub mod two_sum_ii_input_array_is_sorted;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
 pub mod valid_sudoku;
+
+#[cfg(test)]
+mod tests {
+    pub struct StringVec;
+    impl StringVec {
+        pub fn from<const N: usize>(s: [&str; N]) -> Vec<String> {
+            s.into_iter().map(String::from).collect()
+        }
+    }
+}

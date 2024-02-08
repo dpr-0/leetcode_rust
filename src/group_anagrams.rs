@@ -40,13 +40,13 @@ impl Solution {
 
 #[test]
 fn test_group_anagrams() {
-    let case1: Vec<String> = ["eat", "tea", "tan", "ate", "nat", "bat"]
-        .map(String::from)
-        .to_vec();
+    use crate::tests::StringVec;
+
+    let case1 = StringVec::from(["eat", "tea", "tan", "ate", "nat", "bat"]);
     let ans1: Vec<Vec<String>> = vec![
-        ["bat"].map(String::from).to_vec(),
-        ["nat", "tan"].map(String::from).to_vec(),
-        ["ate", "eat", "tea"].map(String::from).to_vec(),
+        StringVec::from(["bat"]),
+        StringVec::from(["nat", "tan"]),
+        StringVec::from(["ate", "eat", "tea"]),
     ];
     assert_eq!(Solution::group_anagrams(case1), ans1);
 }
