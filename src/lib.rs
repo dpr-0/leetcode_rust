@@ -2,6 +2,7 @@ pub mod container_with_most_water;
 pub mod convert_an_array_into_a_2d_array_with_conditions;
 pub mod encode_and_decode_strings;
 pub mod evaluate_reverse_polish_notation;
+pub mod generate_parentheses;
 pub mod group_anagrams;
 pub mod longest_consecutive_sequence;
 pub mod maximum_number_of_words_found_in_sentences;
@@ -18,7 +19,6 @@ pub mod two_sum_ii_input_array_is_sorted;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
 pub mod valid_sudoku;
-
 #[cfg(test)]
 mod tests {
     pub struct StringVec;
