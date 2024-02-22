@@ -1,3 +1,4 @@
+pub mod binary_search;
 pub mod car_fleet;
 pub mod container_with_most_water;
 pub mod convert_an_array_into_a_2d_array_with_conditions;
