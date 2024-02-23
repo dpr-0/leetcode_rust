@@ -7,6 +7,7 @@ pub mod encode_and_decode_strings;
 pub mod evaluate_reverse_polish_notation;
 pub mod generate_parentheses;
 pub mod group_anagrams;
+pub mod koko_eating_bananas;
 pub mod largest_rectangle_in_histogram;
 pub mod longest_consecutive_sequence;
 pub mod maximum_number_of_words_found_in_sentences;
