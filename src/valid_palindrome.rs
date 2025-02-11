@@ -73,7 +73,7 @@ impl Solution {
                 right -= 1;
                 continue;
             }
-            if s.as_bytes()[left].to_ascii_lowercase() == s.as_bytes()[right].to_ascii_lowercase() {
+            if s.as_bytes()[left].eq_ignore_ascii_case(&s.as_bytes()[right]) {
                 left += 1;
                 right -= 1;
             } else {
