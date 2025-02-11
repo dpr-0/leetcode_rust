@@ -5,6 +5,7 @@ pub mod convert_an_array_into_a_2d_array_with_conditions;
 pub mod daily_temperatures;
 pub mod encode_and_decode_strings;
 pub mod evaluate_reverse_polish_notation;
+pub mod find_minimum_in_rotated_sorted_array;
 pub mod generate_parentheses;
 pub mod group_anagrams;
 pub mod koko_eating_bananas;
